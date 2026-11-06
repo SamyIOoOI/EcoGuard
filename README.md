@@ -6,7 +6,7 @@
 ---------------------------------
 ## A closed-loop greenhouse that monitors & controls temperature, humidity, light and soil moisture, logs everything to a local Excel sheet and has a user interface with manual override controls. Built as a capstone project for STEM High School for Boys - 6th of October.
 
-### <p align="center">[Main Features](#main-features) **-** [The Capstone](#the-capstone) **-** [Problem](#the-problem) **-** [Design Requirements](#design-requirements--limitations) **-** [Prototype](#the-prototype) **-** [Code Note](#a-note-on-the-code) **-** [Set Values](#set-values) **-** [Testing](#testing) **-** [Real Life](#real-life-application) **-** [Files](#whats-where)</p>
+### <p align="center">[Main Features](#main-features) **-** [The Capstone](#the-capstone) **-** [Problem](#the-problem) **-** [Design Requirements](#design-requirements--limitations) **-** [Prototype](#the-prototype) **-** [Schematic](#circuit-schematic) **-** [Code Note](#a-note-on-the-code) **-** [Set Values](#set-values) **-** [Testing](#testing) **-** [Real Life](#real-life-application) **-** [Files](#whats-where)</p>
 
 --------------------------
 
@@ -74,6 +74,18 @@ A controlled greenhouse can grow crops on land that isn't farmland while using f
 
 <p align="center"><b>3D model of the device.</b></p>
 
+### Circuit Schematic
+
+Designed in KiCad. The ESP32 reads the temperature and humidity sensors through logic level converters and switches the heater, fans, water pump, LEDs and humidifier through relay driver modules. Power comes from a transformer, a bridge rectifier and 5 V regulators.
+
+<p align="center"><img src="Hardware/KiCad/Schematic/Schematic.png" width="900"></p>
+
+<p align="center"><b>Schematic.</b></p>
+
+<p align="center"><img src="Hardware/KiCad/Schematic/Schematic-Colored.png" width="900"></p>
+
+<p align="center"><b>Same schematic with the colored view.</b></p>
+
 Selection process in [Selection of Prototype](Portfolio/Selection%20of%20Prototype.docx).
 
 ### A Note on the Code
@@ -110,6 +122,7 @@ Details in [real-life recommendations](Portfolio/real-life%20recommendatio.docx)
 ## What's Where
 
 - [Hardware/KiCad/Project](Hardware/KiCad/Project/) - KiCad schematic & project files
+- [Hardware/KiCad/Schematic](Hardware/KiCad/Schematic/) - schematic images
 - [Hardware/KiCad/Modules](Hardware/KiCad/Modules/) - ESP32 DevKitC library & 3D files
 - [Portfolio](Portfolio/) - problem, prototype selection, recommendations, Chapter 1, test plan
 - [Data](Data/) - logger spreadsheets & greenhouse log
